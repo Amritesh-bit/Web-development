@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    max-width: 980px;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left Brand Presentation */
+.brand-section {
+    max-width: 500px;
+    margin-right: 40px;
+}
+
+.brand-logo {
+    color: #1877f2;
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: -1.5px;
+    margin-bottom: 0px;
+}
+
+.brand-text {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: #1c1e21;
+    font-weight: 500;
+}
+
+/* Right Login Form Wrapper */
+.form-section {
+    width: 396px;
+}
+
+.login-box {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    text-align: center;
+}
+
+/* Form Inputs */
+.input-group {
+    margin-bottom: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 15px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    outline: none;
+    color: #1c1e21;
+}
+
+.input-group input::placeholder {
+    color: #8d949e;
+}
+
+.input-group input:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+/* Action Buttons & Links */
+.login-btn {
+    width: 100%;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.login-btn:hover {
+    background-color: #166fe5;
+}
+
+.forgot-link {
+    color: #1877f2;
+    font-size: 13px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #e4e6eb;
+    margin-bottom: 20px;
+}
+
+.create-btn {
+    background-color: #36a420;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.create-btn:hover {
+    background-color: #2b8c17;
+}
+
+/* Responsive Grid Breakpoint */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .brand-section {
+        margin-right: 0;
+        margin-bottom: 30px;
+        max-width: 400px;
+    }
+
+    .brand-logo {
+        font-size: 3rem;
+    }
+
+    .brand-text {
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+    }
+
+    .form-section {
+        width: 100%;
+        max-width: 396px;
+    }
+}
